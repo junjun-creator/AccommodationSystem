@@ -67,10 +67,11 @@
             color: white;
         }
 
-        .main{
-            min-width: 1283px;
-            height: 1000px;
-            overflow: auto;
+        .sec_main{
+            --min-width: 1283px;
+            --height: 1000px;
+            --overflow: auto;
+            display: flex;
         }
 
         footer{
@@ -130,38 +131,42 @@
 
     <section class="main">
         <main class="sec_main">
-            <h1>회원정보관리</h1>
+            <!-- <h1>회원정보관리</h1> -->
             
-            <section>
-                <h1>회원정보관리(개인)</h1>
-                <ul>
-                    <li>
-                        <a href="">회원정보수정</a>
-                    </li>
-                    <li>
-                        <a href="">예약관리</a>
-                    </li>
-                    <li>
-                        <a href="">경매신청관리</a>
-                    </li>
-                    <li>
-                        <a href="">최근살펴본상품조회</a>
-                    </li>
-                    <li>
-                        <a href="">찜한상품조회</a>
-                    </li>
-                </ul>
-            </section>
+            <div>
+                <section>
+                    <h1>회원정보관리(개인)</h1>
+                    <ul>
+                        <li>
+                            <a href="">회원정보수정</a>
+                        </li>
+                        <li>
+                            <a href="">예약관리</a>
+                        </li>
+                        <li>
+                            <a href="">경매신청관리</a>
+                        </li>
+                        <li>
+                            <a href="">최근살펴본상품조회</a>
+                        </li>
+                        <li>
+                            <a href="">찜한상품조회</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
-            <section>
-                <h1>비밀번호확인폼</h1>
-                <form action="">
-                    <span>비밀번호입력</span>
-                    <span>비밀번호를 다시 입력해주세요.</span>
-                    <input type="text">
-                    <input type="submit" value="확인">
-                </form>
-            </section>
+            <div>
+                <section>
+                    <h1>비밀번호확인</h1>
+                    <form action="">
+                        <span>비밀번호입력</span>
+                        <span>비밀번호를 다시 입력해주세요.</span>
+                        <input type="text">
+                        <input type="submit" value="확인">
+                    </form>
+                </section>
+            </div>
         </main>
     </section>
 

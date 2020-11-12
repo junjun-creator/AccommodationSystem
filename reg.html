@@ -67,10 +67,14 @@
             color: white;
         }
 
-        .main{
-            min-width: 1283px;
-            height: 1000px;
-            overflow: auto;
+        .sec_main{
+            --min-width: 1283px;
+            --height: 1000px;
+            --overflow: auto;
+            width: 960px;
+            display: flex;
+            margin: 0 auto;
+            --background-color: aqua;
         }
 
         footer{
@@ -130,83 +134,64 @@
 
     <section class="main">
         <main class="sec_main">
-            <h1>회원정보수정</h1>
-            
-            <section>
-                <h1>회원정보관리(개인)</h1>
-                <ul>
-                    <li>
-                        <a href="">회원정보수정</a>
-                    </li>
-                    <li>
-                        <a href="">예약관리</a>
-                    </li>
-                    <li>
-                        <a href="">경매신청관리</a>
-                    </li>
-                    <li>
-                        <a href="">최근살펴본상품조회</a>
-                    </li>
-                    <li>
-                        <a href="">찜한상품조회</a>
-                    </li>
-                </ul>
-            </section>
 
-            <section>
-                <h1>예약목록</h1>
-                <div>
-                    <ul>
-                        <li><a href="">전체</a></li>
-                        <li><a href="">신청중</a></li>
-                        <li><a href="">성사</a></li>
-                        <li><a href="">만료</a></li>
-                    </ul>
-                </div>
+            <div>
+                <img src="배경1-1.PNG" alt="">
+            </div>
 
-                <div>
-                    <span>최근 6개월 이내의 경매 내역입니다. <br>이전의 내용은 고객센터로 문의해주시기 바랍니다.</span>
-                    <table>
-                        <thead>
+            <div>
+                <h1>회원가입</h1>
+                
+                <section class="sec_form">
+                    <form action="">
+                        <table>
                             <tr>
-                                <td>목록</td>
-                                <td>경매요청정보</td>
-                                <td>예약일자</td>
-                                <td>상태</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a href="">가람슬기스파펜션/성인2인/119.000원</a></td>
-                                <td>20201101</td>
-                                <td>완료</td>
+                                <td>이메일</td>
+                                <td><input type="text"></td>
+                                <td><input type="button" value="중복체크"></td>
                             </tr>
                             <tr>
-                                <td>2</td>
-                                <td><a href="">아이린키즈풀빌라/성인2인,유아2인/325.000원</a></td>
-                                <td>20201224</td>
-                                <td>대기</td>
+                                <td>이름</td>
+                                <td><input type="text"></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td><a href="">론다빌스파펜션/성인3/150.000원</a></td>
-                                <td>20201022</td>
-                                <td>만료</td>
+                                <td>닉네임</td>
+                                <td><input type="text"></td>
+                                <td><input type="button" value="중복체크"></td>
                             </tr>
-                        </tbody>
-                    </table>
-
-                    <div>
-                        <h1>페이지정보</h1>
-                        이전(나중에 버튼으로)
+                            <tr>
+                                <td>비밀번호</td>
+                                <td><input type="text"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>비밀번호확인</td>
+                                <td><input type="text"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>연락처</td>
+                                <td><input type="text"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>회원구분</td>
+                                <td colspan="2">
+                                    <input name="memType" type="radio" checked>
+                                    <span>개인회원</span>
+                                    <input name="memType" type="radio">
+                                    <span>기업회원</span>
+                                </td>
+                            </tr>
+                        </table>
+    
                         <div>
-                            1/2 pages
+                            <input type="submit" value="여행가격의 빈 틈을 찾으러 GOGO~">
                         </div>
-                        다음(나중에 버튼으로)
-                    </div>
-                </div>
-            </section>
+                    </form>
+                </section>
+            </div>
         </main>
     </section>
 
