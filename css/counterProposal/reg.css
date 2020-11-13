@@ -1,0 +1,28 @@
+.header {
+    height: 100px;
+    background: wheat;
+}
+
+/********************************************/
+
+.main {
+    width: 1200px;
+    min-height: 800px;
+    background: rgb(107, 197, 224);
+    margin: 0 auto;
+}
+
+    .breadcrumb {
+        background: violet;
+    }
+
+    .reg-form {
+        background: tomato;
+    }
+
+/********************************************/
+
+.footer {
+    height: 100px;
+    background: yellowgreen;
+}
