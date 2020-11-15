@@ -4,115 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html, body{
-            margin: 0;
-            padding: 0;
-        }
-
-        .header{
-            display: flex;
-            background: #5f0081;
-            height: 72px;
-        }
-        .header_h1{
-            flex-basis: 50px;
-            height:70%;
-            background: url(../../틈로고.png) 0 0 no-repeat;
-            text-indent: -9999px;
-            background-size: 50px auto;
-        }
-
-        .teum_logo{
-            box-sizing: border-box;
-            height: 100%;
-        } 
-
-        header h1{
-            margin: 0;
-            height: 100%;
-        } 
-
-        header ul{
-            display: flex;
-            margin: 0;
-        }
-        
-        header li{
-            color: white;
-            list-style: none;
-        }
-        
-
-        header a {
-            height: 50%;
-            display: block;
-            text-align: center;
-            padding: .5rem 1rem;
-            text-decoration: none;
-            color: white;
-        }
-        
-        .sec_main{
-            --min-width: 1283px;
-            --height: 1000px;
-            --overflow: auto;
-            display: flex;
-        }
-
-        footer{
-            overflow: auto;
-            min-width: 1283px;
-            padding-top: 30px;
-            height: 300px;
-            background-color: lightgray;
-            color :rgba(0,0,0,0.38);
-        }
-
-        footer div{
-            width: 1024px;
-            margin: 0 auto;
-        }
-
-        footer ul{
-            padding: 0;
-            list-style: none;
-        }
-
-        footer ul li{
-            padding: 0;
-            margin: 0;
-            display: inline-block;
-        }
-
-        footer ul li a{
-            padding: 0;
-            margin: 0;
-            display: inline-block;
-        }
-
-        footer a{
-            color: lightslategray;
-        }
-
-        footer div p{
-            padding-top: 20px;
-            padding-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/company/userInfo/myAccommodationLists.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header pcHeader">
         <div class="header_h1">
             <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
         </div>
         <div>
-            <ul>
+            <ul class="main_menu">
+                <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
                 <li><a href="">공지사항</a></li>
                 <li><a href="">이벤트</a></li>
                 <li><a href="">더보기</a></li>
-                <li><a href="">로그인</a></li>
+                <li class="mypage"><a href="">로그인</a>
+                    <div class="mega_menu">
+                        <ul>
+                            <li><a href="">submenu</a></li>
+                            <li><a href="">submenu</a></li>
+                            <li><a href="">submenu</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
+        </div>
+    </header>
+
+    <header class="header mobileHeader">
+        <div>
+            <a href=""><i class="fas fa-bars"></i></a>
+        </div>
+        <div class="header_h1">
+            <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
+        </div>
+        <div>
+            <a href=""><i class="fas fa-search"></i></a>
         </div>
     </header>
 
