@@ -6,64 +6,69 @@
     <title>(기업)골든타임등록</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/jun.css">
+    <link href="../../css/company/promotion/regGoldenTime.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header pcHeader">
-        <div class="header_h1">
-            <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
+    <body>
+        <div class="sec_header">
+            <header class="header pcHeader">
+                <div class="header_h1">
+                    <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
+                </div>
+                <div>
+                    <ul class="main_menu">
+                        <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">더보기</a></li>
+                        <li class="mypage"><a href="">로그인</a>
+                            <div class="mega_menu">
+                                <ul>
+                                    <li><a href="">submenu</a></li>
+                                    <li><a href="">submenu</a></li>
+                                    <li><a href="">submenu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
         </div>
-        <div>
-            <ul class="main_menu">
-                <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
-                <li><a href="">공지사항</a></li>
-                <li><a href="">이벤트</a></li>
-                <li><a href="">더보기</a></li>
-                <li class="mypage"><a href="">로그인</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <header class="header mobileHeader">
-        <div>
-            <a href=""><i class="fas fa-bars"></i></a>
-        </div>
-        <div class="header_h1">
-            <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
-        </div>
-        <div>
-            <a href=""><i class="fas fa-search"></i></a>
-        </div>
-    </header>
+    
+        <header class="header mobileHeader">
+            <div>
+                <a href=""><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="header_h1">
+                <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
+            </div>
+            <div>
+                <a href=""><i class="fas fa-search"></i></a>
+            </div>
+        </header>
 
     <section class = "main">
-        <h1>골든타임 등록</h1>
+        <h1>골든타임 등록</h1><br>
 
-        <div>
+        <div class= "date">
             <section>
                 시작일 : <input type="date"><br>
-                종료일 : <input type="date">
+                종료일 : <input type="date"><br><br>
             </section>
         </div>
-        <div>
+        <div class= "goldentime-list">
             <section>
                 <h1>골든타임 방 목록</h1><br>
-                <input type="radio"> 골든타임 방
+
+                <input type="checkbox"> 골든타임 방
                 가격 : <input type="text"><br>
-                <input type="radio"> 골든타임 방
+                <input type="checkbox"> 골든타임 방
                 가격 : <input type="text"><br>
-                <input type="radio"> 골든타임 방
+                <input type="checkbox"> 골든타임 방
                 가격 : <input type="text"><br>
-                <input type="radio"> 골든타임 방
-                가격 : <input type="text"><br>
+                <input type="checkbox"> 골든타임 방
+                가격 : <input type="text"><br><br>
 
                 <button>등록</button>
             </section>
@@ -72,7 +77,7 @@
 </body>
 
 
-<section>
+<section class="sec_footer">
     <footer>
         <div>
             <ul>
