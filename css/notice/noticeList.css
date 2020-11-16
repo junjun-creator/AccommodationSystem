@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/********************************************/
+
+.container {
+    width: 1200px;
+    min-height: 100px;
+    --background: orange;
+    margin: 0 auto;
+    display: flex;
+}
+
+    .aside {
+        background: palegreen;
+        width: 300px;
+    }
+
+    .main {
+        width: 900px;
+        min-height: 100px;
+        background: rgb(107, 197, 224);
+    }
+        .breadcrumb {
+            background: violet;
+        }
+
+        .notice-sec {
+            background: rgb(113, 51, 214);
+            border: 1px solid black;
+        }
+
+            .notice-sec li{
+                border: 1px solid black;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+/********************************************/
