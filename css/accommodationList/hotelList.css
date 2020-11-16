@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .aside{
+    width: 300px;
+    }
+    
+
+    .main{
+    width: 900px;
+    }
+        .location{
+            display: inline-block;
+            font-weight : bold;
+            border: 1px solid red;
+        }  
+            .locaion ul{
+                display: flex;
+            }
+                .location ul>li{
+                    padding-left: 5px;
+                }
+        .calander-people{
+
+        }
+        .hotelList{
+            
+        }
