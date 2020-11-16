@@ -117,8 +117,8 @@ header a {
 
 .sec_login_main{
     min-height: 600px;
-    --width: 1200px;
-    --margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,9 +126,11 @@ header a {
 }
     .sec_login_main>div:first-child{
         margin-right: 100px;
+        border: 1px solid red;
     }
     .sec_login_main>.login_form{
         --margin-left: 100px;
+        border: 1px solid red;
         display: flex;
         flex-direction: column;
     }
@@ -233,24 +235,31 @@ footer div p{
 }
 
 .userInfo_main{
-    --width: 100%;
-    --display: flex;
-    --justify-content: center;
+    min-height: 600px;
+    background-color: khaki;
 }
-
 .sec_userInfo_main{
     display: flex;
+    min-height: inherit;
     width: 1200px;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    --flex-wrap: wrap;
-    min-height: 600px;
 }
-
     .sec_userInfo_main>aside{
         width: 300px;
+        /*display: flex;
+        flex-direction: column;
+        align-items: center; */
+        background-color: lightcoral;
     }
-    .sec_userInfo_main>div>section{
+        .sec_userInfo_main>aside>h1{
+            /* font-family: '맑은 고딕', '고딕', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin-top: 43px; */
+            
+        }
+    .sec_userInfo_main>div{
         width: 900px;
+        background-color: lightgreen;
     }
