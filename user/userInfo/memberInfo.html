@@ -10,28 +10,30 @@
 
 </head>
 <body>
-    <header class="header pcHeader">
-        <div class="header_h1">
-            <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
-        </div>
-        <div>
-            <ul class="main_menu">
-                <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
-                <li><a href="">공지사항</a></li>
-                <li><a href="">이벤트</a></li>
-                <li><a href="">더보기</a></li>
-                <li class="mypage"><a href="">로그인</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="sec_header">
+        <header class="header pcHeader">
+            <div class="header_h1">
+                <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
+            </div>
+            <div>
+                <ul class="main_menu">
+                    <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">더보기</a></li>
+                    <li class="mypage"><a href="">로그인</a>
+                        <div class="mega_menu">
+                            <ul>
+                                <li><a href="">submenu</a></li>
+                                <li><a href="">submenu</a></li>
+                                <li><a href="">submenu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
 
     <header class="header mobileHeader">
         <div>
@@ -45,48 +47,50 @@
         </div>
     </header>
 
-    <section class="main">
-        <main class="sec_main">
+    <section class="userInfo_main">
+        <main class="sec_userInfo_main">
             <!-- <h1>회원정보관리</h1> -->
-            
-            <div>
-                <section>
-                    <h1>회원정보관리(개인)</h1>
-                    <ul>
-                        <li>
-                            <a href="">회원정보수정</a>
-                        </li>
-                        <li>
-                            <a href="">예약관리</a>
-                        </li>
-                        <li>
-                            <a href="">경매신청관리</a>
-                        </li>
-                        <li>
-                            <a href="">최근살펴본상품조회</a>
-                        </li>
-                        <li>
-                            <a href="">찜한상품조회</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+            <aside>
+                <h1>회원정보관리(개인)</h1>
+                <ul>
+                    <li>
+                        <a href="">회원정보수정</a>
+                    </li>
+                    <li>
+                        <a href="">예약관리</a>
+                    </li>
+                    <li>
+                        <a href="">경매신청관리</a>
+                    </li>
+                    <li>
+                        <a href="">최근살펴본상품조회</a>
+                    </li>
+                    <li>
+                        <a href="">찜한상품조회</a>
+                    </li>
+                </ul>
+            </aside>
 
             <div>
                 <section>
                     <h1>비밀번호확인</h1>
-                    <form action="">
-                        <span>비밀번호입력</span>
-                        <span>비밀번호를 다시 입력해주세요.</span>
-                        <input type="text">
-                        <input type="submit" value="확인">
-                    </form>
+                    <div>
+                            <p>비밀번호입력</p>
+                            <p>비밀번호를 다시 입력해주세요.</p>
+                    </div>
+                    <div>
+                        <form action="">
+                            <input type="text">
+                            <input type="submit" value="확인">
+                        </form>
+                    </div>
+
                 </section>
             </div>
         </main>
     </section>
 
-    <section>
+    <section class="sec_footer">
         <footer>
             <div>
                 <ul>
