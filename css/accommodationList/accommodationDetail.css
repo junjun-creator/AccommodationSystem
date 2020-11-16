@@ -1,5 +1,8 @@
 .main{
-
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
     .title{
 
@@ -8,11 +11,17 @@
 
     }
     .event{
-
+        border: 2px solid black;
     }
     .dateChange{
-
+        border: 2px solid black;
     }
     .information{
-        
+        display: flex;
     }
+        .information div:first-child{
+
+        }
+        .information div:nth-child(2){
+            
+        }
