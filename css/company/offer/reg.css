@@ -12,37 +12,136 @@
 
 .container {
     width: 1200px;
-    min-height: 100px;
-    --background: orange;
-    margin: 0 auto;
+    min-height: 700px;
+    margin: 30px auto 0 auto;
     display: flex;
 }
 
     .aside {
-        background: palegreen;
+        border: 1px solid red;
         width: 300px;
     }
 
     .main {
         width: 900px;
-        min-height: 100px;
-        --background: rgb(107, 197, 224);
+        min-height: 700px;
     }
         .breadcrumb {
-            background: violet;
+            border: 1px solid red;
         }
+
+            .breadcrumb > ul {
+                display: flex;
+                justify-content: flex-end;
+            }
 
         .proposal-sec {
-            background: palevioletred;
+            --border: 1px solid red;
         }
+
+            .proposal-sec > h1 {
+                border: 1px solid green;
+                width: 500px;
+                font-weight: bold;
+                font-size: 30px;
+                margin: 20px 0 0 30px;
+            }
+
+            .proposal-sec > .proposal-container {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 20px;
+            }
+
+                .proposal-container > div {
+                    border: 1px solid purple;
+                    flex-basis: 400px;
+                }
+
+                .proposal-container > div:hover {
+                    background: rgb(203, 185, 221);
+                    border: 3px solid purple;
+                }
+
+                    .proposal-container > div > h2 {
+                        padding-left: 10px;
+                        font-weight: bold;
+                    }
+
+                        .proposal-container > div > ul > li {
+                            display: flex;
+                            --flex-grow: 1;
+                            padding-left: 10px;
+                            margin-top: 5px;
+                        }
+
+                            .proposal-container > div > ul > li > div{
+                                --border: 1px solid red;
+                                flex-basis: 120px;
+                                flex-grow: 1;
+                            }
+
+                            .proposal-container > div > ul > li > div:nth-child(2){
+                                --border: 1px solid red;
+                                flex-basis: 250px;
+                                flex-grow: 3;
+                            }
 
         .offer-sec {
-            background: powderblue;
+            border: 1px solid red;
+            margin: 30px auto 0 auto;
         }
 
-            .offer-form {
-                --background: tomato;
+            .offer-sec > h1 {
+                border: 1px solid green;
+                width: 500px;
+                font-weight: bold;
+                font-size: 30px;
+                margin-left: 30px;
             }
+
+            .offer-form {
+                border: 1px solid blue;
+                margin: 20px 30px 0 30px;
+            }
+
+                .offer-form > section {
+                    display: flex;
+                    border: 1px solid red;
+                }
+
+                    .offer-form > section > div:nth-child(1) {
+                        flex-grow: 1;
+                    }
+
+                    .offer-form > section > div:nth-child(2) {
+                        flex-grow: 10;
+                    }
+
+                    .offer-form > section > .offer-container {
+                        display: flex;
+                        border: 1px solid red;
+                    }
+
+                        .offer-form > section > .offer-container .offer-price {
+                            display: flex;
+                            margin-top: 30px;
+                        }
+
+                        .offer-form > section > .offer-container .offer-price > div:nth-child(1) {
+                            border: 1px solid red;
+                            flex-basis: 100px;
+                        }
+
+                        .offer-form > section > .offer-container .offer-price > div:nth-child(2) {
+                            border: 1px solid red;
+                        }
+
+
+                        .offer-form > section > .offer-container .offer-detail-link {
+                            border: 1px solid red;
+                            margin-top: 30px;
+                        }
 
 /********************************************/
 

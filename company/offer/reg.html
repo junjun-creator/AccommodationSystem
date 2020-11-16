@@ -38,23 +38,59 @@
             <main id="main" class="main">
                 <div class="breadcrumb">
                     <ul>
-                        <li><i class="fas fa-home"></i>HOME</li>
-                        <li>회원 정보 관리(기업)</li>
-                        <li>역제안 신청 관리</li>
+                        <li><i class="fas fa-home"></i>HOME ▶ </li>
+                        <li>회원 정보 관리(기업) ▶ </li>
+                        <li>역제안 신청 관리 ▶ </li>
                         <li>오퍼 상세정보</li>
                     </ul>
                 </div>
                 <section class="proposal-sec">
                     <h1>○○○○님이 제안하신 정보에요!</h1>  
                     <!-- 아래 div태그의 개수는 동적으로 변함 -->
-                    <div>
-                        <div>제안정보</div>
-                        <ul>
-                            <li><span>날짜</span>2020.12.07 ~ 2020.12.08</li>
-                            <li><span>위치</span>서울시 강남구</li>
-                            <li><span>인원수</span>성인2, 아동1</li>
-                            <li><span>희망하는 가격</span>50,000원</li>
-                        </ul>
+                    <div class="proposal-container">
+                        <div>
+                            <h2>제안정보</h2>
+                            <ul>
+                                <li>
+                                    <div>날짜</div>
+                                    <div>2020.12.07 ~ 2020.12.08</div>
+                                </li>
+                                <li>
+                                    <div>위치</div>
+                                    <div>서울시 강남구</div>
+                                </li>
+                                <li>
+                                    <div>인원수</div>
+                                    <div>성인2, 아동1</div>
+                                </li>
+                                <li>
+                                    <div>희망하는 가격</div>
+                                    <div>50,000원</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>제안정보</h2>
+                            <ul>
+                                <li>
+                                    <div>날짜</div>
+                                    <div>2020.12.07 ~ 2020.12.08</div>
+                                </li>
+                                <li>
+                                    <div>위치</div>
+                                    <div>서울시 강남구</div>
+                                </li>
+                                <li>
+                                    <div>인원수</div>
+                                    <div>성인2, 아동1</div>
+                                </li>
+                                <li>
+                                    <div>희망하는 가격</div>
+                                    <div>50,000원</div>
+                                </li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </section>
                 <section class="offer-sec">
@@ -64,7 +100,7 @@
                             <div>
                                 <input type="checkbox" required>
                             </div>
-                            <div>
+                            <div class="offer-container">
                                 <div>
                                     <img src="http://lorempixel.com/200/150/">
                                 </div>
@@ -72,13 +108,12 @@
                                     <div>
                                         <span>스탠다드 더블</span>
                                     </div>
-                                    <div>
+                                    <div class="offer-price">
                                         <div>가격</div>
                                         <div>128,260원</div>
                                     </div>
-                                    <hr>
-                                    <div>객실 자세히 보기</div>
-                                    <div><i class="fas fa-caret-right"></i></div>
+                                    <div class="offer-detail-link">객실 자세히 보기</div>
+                                    <!-- <div><i class="fas fa-caret-right"></i></div> -->
                                 </div>
                             </div>
                         </section>
