@@ -126,7 +126,7 @@ header a {
         }
         .sec_login_main>.login_form th+td>input[type=text],.sec_login_main>.login_form th+td>input[type=password]{
             margin-left: 16px;
-            width: 220px;
+            width: 200px;
         }
         .sec_login_main>.login_form th~td>input[type=button]{
             margin-left: 16px;
