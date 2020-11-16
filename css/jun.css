@@ -3,17 +3,22 @@ html, body{
     padding: 0;
 }
 
-body{
+/* body{
     display: flex;
     flex-direction: column;
+    flex-basis: auto;
+} */
+.sec_header{
+    background: #5f0081;
 }
-
 .header{
     display: flex;
     background: #5f0081;
     height: 72px;
+    width: 1200px;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .header_h1{
     flex-basis: 50px;
@@ -74,13 +79,19 @@ header a {
     text-decoration: none;
     color: white;
 }
-
-@media(max-width: 600px){
+/*---------반응형 용으로 만들어둔거 손대지 않기-----------*/
+.mobileHeader{
+    display: none;
+}
+/* @media(max-width: 600px){
     .mobileHeader{
         display: flex;
     }
     .pcHeader{
         display: none;
+    }
+    .sec_login_main>div:first-child>img{
+        width: 300px;
     }
 }
 
@@ -91,7 +102,11 @@ header a {
     .pcHeader{
         display: flex;
     }
-}
+    .sec_login_main>div:first-child>img{
+        width: 500px;
+    }
+} */
+/*---------------------------------------------------------*/
 
 .main{
     --min-height: 600px;
@@ -102,13 +117,18 @@ header a {
 
 .sec_login_main{
     min-height: 600px;
+    --width: 1200px;
+    --margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*나중에 반응형 만들때 사용하기*/
 }
+    .sec_login_main>div:first-child{
+        margin-right: 100px;
+    }
     .sec_login_main>.login_form{
-        margin-left: 100px;
+        --margin-left: 100px;
         display: flex;
         flex-direction: column;
     }
@@ -171,23 +191,25 @@ header a {
         cursor: pointer;
     }
 
+.sec_footer{
+    background-color: lightgray;  
+}
 footer{
-    --overflow: auto;
-    --min-width: 1283px;
-    --padding-top: 30px;
     height: 300px;
-    background-color: lightgray;
+    width: 1200px;
+    background-color: lightgray;  
     color :rgba(0,0,0,0.38);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 footer ul{
     padding: 0;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    --flex-wrap: wrap;
 }
 
 footer ul li{
@@ -195,11 +217,11 @@ footer ul li{
     flex-shrink: 0;
 }
 
-footer ul li a{
+/* footer ul li a{
     padding: 0;
     margin: 0;
     display: inline-block;
-}
+} */
 
 footer a{
     color: lightslategray;
@@ -209,3 +231,26 @@ footer div p{
     padding-top: 20px;
     padding-bottom: 10px;
 }
+
+.userInfo_main{
+    --width: 100%;
+    --display: flex;
+    --justify-content: center;
+}
+
+.sec_userInfo_main{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    --flex-wrap: wrap;
+    min-height: 600px;
+}
+
+    .sec_userInfo_main>aside{
+        width: 300px;
+    }
+    .sec_userInfo_main>div>section{
+        width: 900px;
+    }
