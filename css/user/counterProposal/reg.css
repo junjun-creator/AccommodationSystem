@@ -110,7 +110,7 @@ header a {
         border: 1px solid red;
     }
 
-        .breadcrumb > ul {
+        .breadcrumb > .breadcrumb-list {
             display: flex;
             justify-content: flex-end;
         }
