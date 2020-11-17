@@ -6,31 +6,34 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/jun.css">
     <link rel="stylesheet" href="../css/user/QnA.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <title>userQuestion</title>
 </head>
 <body>
-    <header class="header pcHeader">
-        <div class="header_h1">
-            <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
-        </div>
-        <div>
-            <ul class="main_menu">
-                <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
-                <li><a href="">공지사항</a></li>
-                <li><a href="">이벤트</a></li>
-                <li><a href="">더보기</a></li>
-                <li class="mypage"><a href="">로그인</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="sec_header">
+        <header class="header pcHeader">
+            <div class="header_h1">
+                <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
+            </div>
+            <div>
+                <ul class="main_menu">
+                    <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">더보기</a></li>
+                    <li class="mypage"><a href="">로그인</a>
+                        <div class="mega_menu">
+                            <ul>
+                                <li><a href="">submenu</a></li>
+                                <li><a href="">submenu</a></li>
+                                <li><a href="">submenu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
     <section>
         <div class="container">
             <aside id="aside" class="aside">
@@ -42,42 +45,47 @@
                     </ul>
             </aside>
             <main id="main" class="main">
-                <h1>1:1 문의하기</h1>
                 <div class="breadcrumb">
                     <ul>
-                        <li><i class="fas fa-home"></i>HOME</li>
+                        <li><i class="fas fa-home"></i>HOME></li>
                         <li>QnA</li>
                     </ul>
                 </div>
+                <h1>1:1 문의하기</h1>
                 <section class="qna-sec">
-                    <h1>문의 리스트</h1>
-                    <section>
-                        <h1>체인지 탭</h1>
-                        <ul>
+                    <h1 class="d-none">문의 리스트</h1>
+                    <section class="change-tap">
+                        <h1 class="d-none">체인지 탭</h1>
+                        <ul class="change-tap-list">
                             <li>
-                                <input type="button" value="내 문의">
+                               <input type="button" value="내 문의" class="tap img-btn">
                             </li>
                             <li>
-                                <input type="button" value="문의하기">
+                               <input type="button" value="문의하기" class="img-btn">
                             </li>
                         </ul>
                     </section>
                     <section class="qna-list">
-                        <h1>내 문의 리스트</h1>
+                        <h1 class="d-none">내 문의 리스트</h1>
                         <ol>
                             <li>
-                                <input type="checkbox" name="" id="">
-                                <p>답변</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.</p>
-                                <p>2020/11/01</p>
+                                <div>
+                                    <p>답변</p>
+                                    <p class="p-detail d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam placeat eum numquam quia quasi labore, magni itaque quae et quo blanditiis iusto illo aspernatur ab! Ut iusto delectus corrupti modi!
+                                    d-none Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et nam laboriosam unde enim beatae excepturi eius mollitia, quod praesentium ipsam. A quos nostrum aperiam dolorum omnis ab repellendus sint?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem odit impedit unde cumque voluptates quo doloremque, eligendi blanditiis modi deleniti pariatur, nesciunt consequatur quidem vitae quasi voluptate hic. Repellat, rem!
+                                    </p>
+                                    <p>2020/11/01</p>
+                                </div>
                                 <p>Master</p>
                             </li>
                         </ol>
                     </section>
                     <section class="qna-creat">
-                        <h1>문의 작성</h1>
+                        <h1 class="d-none">문의 작성</h1>
                         <form action="">
-                            <select name="" id="">
+                            <select name="" id="" class="category">
                                 <option value="" selected disabled>문의 유형을 선택해 주세요</option>
                                 <option value="이벤트">이벤트</option>
                                 <option value="예약/결제">예약/결제</option>
@@ -95,7 +103,7 @@
             </main>
         </div>
     </section>
-    <section>
+    <section class="sec_footer">
         <footer id="footer" class="footer">
             <div>
                 <ul>

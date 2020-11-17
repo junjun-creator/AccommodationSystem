@@ -1,7 +1,16 @@
 * {
     box-sizing: border-box;
 }
-
+.d-none{
+    display: none;
+}
+.header_h1{
+    flex-basis: 50px;
+    height:70%;
+    background: url("../../틈로고.png") 0 0 no-repeat;
+    text-indent: -9999px;
+    background-size: 50px auto;
+}
 
 /********************************************/
 
@@ -20,22 +29,51 @@
 
     .main {
         width: 900px;
-        min-height: 100px;
-        background: rgb(107, 197, 224);
+        min-height: 500px;
     }
         .breadcrumb {
-            background: violet;
+            width: 100%;
         }
-
-        .notice-sec {
-            background: rgb(113, 51, 214);
-            border: 1px solid black;
-        }
-
-            .notice-sec li{
-                border: 1px solid black;
+            .breadcrumb>ul{
                 display: flex;
-                flex-direction: row;
-                align-items: center;
+                justify-content: flex-end;
             }
+        .notice-sec {
+            height: 500px;
+            
+        }
+            .notice-sec-list{
+                min-height: 350px; /* 컨텐츠 크기에 따른 높이 변화 */
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;                
+                justify-content: space-around;
+            }
+                .notice-sec-list li{
+                    width: 600px;
+                    flex: 0 0 100px;
+                    padding-right: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    border: 1.5px solid gray;
+                    border-radius: 20px;
+                    background: url("../../images/icon/notice-button.png") no-repeat  right 3% bottom 50%/7%;
+                }
+    
+                    .notice-sec-list li>div{
+                        flex: 0 0 400px;
+                        padding: 20px;
+                    }
+                        .notice-sec-list li:hover .d-none{
+                            display: block;
+                        }
+                        .notice-sec-list li:hover {
+                            background: url("../../images/icon/notice-button-click.png") no-repeat  right 3% bottom 50%/7%;
+
+                        }
+                        .notice-sec-list li>div p:nth-child(1){
+                            border-bottom: 0.5px solid gray;
+                        }
 /********************************************/
