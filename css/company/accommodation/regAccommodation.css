@@ -1,0 +1,23 @@
+main{
+width: max-content;
+margin-left: auto;
+margin-right: auto;
+}  
+    main>content-box{
+    
+    }
+    main h1{
+        font-weight: bold;
+        font-size: ;
+        color: #5F0080;
+    }
+    main .room{
+        display: inline-block;
+        border: 2px solid black;
+    }
+    main .addButton{
+        
+    }
+    main .regButton{
+
+    }
