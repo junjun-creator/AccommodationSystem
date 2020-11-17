@@ -12,16 +12,31 @@
     }
     .event{
         border: 2px solid black;
+        display: flex;
     }
+        .event nav a{
+            justify-content: flex-end;
+        }
+        .event nav ul{
+            align-items: flex-end;
+        }
     .dateChange{
         border: 2px solid black;
     }
     .information{
         display: flex;
     }
-        .information div:first-child{
+        .information form tr:first-child td:first-child{
+            background: url(../../images/company/신라스테이_삼성/스탠다드_트윈/신라스테이_삼성_스탠다드트윈_메인.png);
+            width: 248px;
+            height: 176px;
+        }
+        .information table tr:first-child{
 
         }
-        .information div:nth-child(2){
+        .information table tr:nth-child(2){
+            
+        }
+        .information table tr:nth-child(3){
             
         }
