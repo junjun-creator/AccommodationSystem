@@ -8,6 +8,22 @@ html, body{
     flex-direction: column;
     flex-basis: auto;
 } */
+
+/*-------------메인페이지용 헤더------------*/
+.sec_header_index{
+    background: white;
+}
+.header_index{
+    display: flex;
+    background: white;
+    height: 72px;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/*------------------------------------------*/
+
 .sec_header{
     background: #5f0081;
 }
@@ -20,7 +36,14 @@ html, body{
     justify-content: space-between;
     margin: 0 auto;
 }
-.header_h1{
+.header_index>.header_h1{
+    flex-basis: 50px;
+    height:70%;
+    background: url(../../../../틈로고index.png) 0 0 no-repeat;
+    text-indent: -9999px;
+    background-size: 50px auto;
+}
+.header>.header_h1{
     flex-basis: 50px;
     height:70%;
     background: url(../../../../틈로고.png) 0 0 no-repeat;
@@ -51,14 +74,14 @@ header h1{
     margin: 0;
     position: relative;
 }
-.mega_menu{
+.header .mega_menu{
     display: none;
     position: absolute;
     right: 0;
     border: 1px solid black;
     background-color: black;
 }
-    .mega_menu a{
+    .header .mega_menu a{
         color: white;
     }
 
@@ -71,14 +94,39 @@ header li{
     list-style: none;
 }
 
-header a {
-    height: 50%;
+/*-------------메인페이지용 헤더------------*/
+.header_index a {
+    --height: 50%;
+    display: block;
+    text-align: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #5f0081;
+    font-weight: bold;
+}
+
+.header_index .mega_menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    border: 1px solid #5f0081;
+    background-color: #5f0081;
+}
+    .header_index .mega_menu a{
+        color: white;
+    }
+/*----------------------------------------*/
+
+.header a {
+    --height: 50%;
     display: block;
     text-align: center;
     padding: .5rem 1rem;
     text-decoration: none;
     color: white;
 }
+
+
 /*---------반응형 용으로 만들어둔거 손대지 않기-----------*/
 .mobileHeader{
     display: none;
@@ -107,6 +155,100 @@ header a {
     }
 } */
 /*---------------------------------------------------------*/
+
+.promotion{
+    height: 600px;
+    background-color: rgb(247, 188, 247);
+    --border: 1px solid red;
+}
+    .promotion>div:first-child{
+        width: 1200px;
+        margin: auto;
+        --border: 1px solid red;
+    }
+    .promotion>div:nth-child(2){
+        display: flex;
+        height: 500px;
+        padding-top: 20px;
+        width: 1200px;
+        margin: 0 auto;
+        --border: 1px solid red;
+        justify-content: space-evenly;
+    }
+        .promotion>div:first-child{
+            padding-top: 30px;
+            text-indent: 100px;
+        }
+        
+        .promotion>div:nth-child(2)>div{
+            --border: 1px solid red;
+            --text-align: center;
+            height: 100%;
+            display: flex;
+        }
+            .promotion>div:nth-child(2)>div:nth-child(1),
+            .promotion>div:nth-child(2)>div:nth-child(5){
+                align-items: center;
+            }
+            .promotion>div:nth-child(2)>div:nth-child(1)>i,
+            .promotion>div:nth-child(2)>div:nth-child(5)>i{
+                font-size: 1000px;
+            }
+        .promotion .promotion-item{
+            align-items: center;
+            background-color: rgb(253, 245, 230);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+            .promotion .promotion-item img{
+                padding-top: 10px;
+                width: 300px;
+                height: 350px;
+            }
+            .promotion .promotion-item>div:nth-child(2),
+            .promotion .promotion-item>div:nth-child(3){
+                align-self: start;
+            }
+            .promotion .promotion-item .promotion-item-detail>h2{
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .promotion .promotion-item .promotion-item-detail>h4{
+                font-size: 12px;
+                color: gray;
+                text-decoration: line-through;
+            }
+            .promotion .promotion-item .promotion-item-detail>h3{
+                font-size: 14px;
+                color: red;
+                font-weight: bold;
+            }
+            .promotion .promotion-item .promotion-item-detail>h5{
+                font-size: 14px;
+                padding: 5px 0;
+                width: 290px;
+                border-bottom: 1.5px solid rgb(160, 160, 160);
+            }
+
+            .promotion>div:nth-child(2)>div>a{
+                --border: 1px solid red;
+            }
+            .promotion>div:nth-child(2)>div:nth-child(1){
+                margin-left: 80px;
+            }
+            .promotion>div:nth-child(2)>div:nth-child(5){
+                margin-right: 80px;
+            }
+        .promotion>div:nth-child(2)>div:nth-child(2){
+            width: 300px;
+        }
+        .promotion>div:nth-child(2)>div:nth-child(3){
+            width: 300px;
+        }
+        .promotion>div:nth-child(2)>div:nth-child(4){
+            width: 300px;
+        }
+
 
 .main{
     --min-height: 600px;
