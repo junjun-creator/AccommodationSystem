@@ -12,19 +12,43 @@
 
 .container {
     width: 1200px;
-    min-height: 700px;
+    min-height: 500px;
     margin: 30px auto 0 auto;
     display: flex;
 }
 
     .aside {
-        border: 1px solid red;
+        border: 1px solid rgb(209, 196, 196);
+        border-radius: 5px;
         width: 300px;
+        height: 330px;
+        margin-top: 70px;
     }
+
+        .aside > h1 {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 0 0 20px;
+        }
+
+        .aside > ul {
+            width: 200px;
+            padding: 10px 0 0 40px;
+        }
+
+        .aside li {
+            padding-top: 10px;
+            font-size: 20px;
+        }
+
+        .aside li .active {
+            font-weight: bold;
+            color: #fc0453;
+        }
 
     .main {
         width: 900px;
-        min-height: 700px;
+        min-height: 500px;
     }
         .breadcrumb {
             --border: 1px solid red;
@@ -55,7 +79,7 @@
 
                 .proposal-container > div {
                     border: 1px solid purple;
-                    flex-basis: 400px;
+                    flex-basis: 350px;
                 }
 
                 .proposal-container > div:hover {
@@ -93,7 +117,7 @@
 
         .offer-sec {
             --border: 1px solid red;
-            margin: 30px auto 0 auto;
+            margin: 70px auto 0 auto;
         }
 
             .offer-sec > h1 {
@@ -106,7 +130,7 @@
 
             .offer-form {
                 --border: 1px solid blue;
-                margin: 20px 30px 0 30px;
+                margin: 20px 0px 0 30px;
             }
 
                 .offer-form > section {
@@ -121,7 +145,7 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        --border: 1px solid red;
+                        --border: 1px solid rgb(0, 132, 255);
                     }
                     
                     .offer-form > section > .checkbox-container > input[type="checkbox"] {
@@ -140,7 +164,7 @@
                     }
 
                     .offer-form > section > .checkbox-container > input[type="checkbox"]:checked + label span {
-                        background: url(../../../images/checkbox-bold.svg) -32px top no-repeat;
+                        background: url(../../../images/checkbox-bold.svg) -33px top no-repeat;
                         background-size: cover;
                     }
 
@@ -159,45 +183,55 @@
                         --border: 1px solid red;
                     }
 
-                        .offer-img {
+                        .offer-img-container {
                             margin: 10px auto;
                         }
 
                         .offer-detail-container {
                             width: 100%;
                             margin-left: 10px;
+                            position: relative;
                         }
 
                         .offer-detail-container .offer-room {
-                            --border: 1px solid red;
+                            border: 1px solid red;
                             margin-top: 10px;
                             --display: inline-block;
+                            position: absolute;
                         }
 
                         .offer-detail-container .offer-price {
-                            display: flex;
+                            --display: flex;
+                            --display: inline-block;
                             margin-top: 30px;
                         }
 
                         .offer-detail-container .offer-price > div:nth-child(1) {
-                            --border: 1px solid blue;
+                            border: 1px solid blue;
                             margin-top: 40px;
                             --flex-basis: 200px;
-                            flex-grow: 1;
+                            --flex-grow: 1;
+                            position: absolute;
+                            top: 70px;
                         }
 
                         .offer-detail-container .offer-price > div:nth-child(2) {
-                            --border: 1px solid green;
+                            border: 1px solid green;
                             margin-top: 40px;
                             flex-grow: 0;
                             margin-right: 10px;
+                            position: absolute;
+                            top: 70px;
+                            right: 10px;
                         }
 
 
                         .offer-detail-container .offer-detail-link {
-                            --border: 1px solid red;
+                            border: 1px solid red;
                             margin-top: 80px;
                             --display: inline-block;
+                            position: absolute;
+                            top: 120px;
                         }
 
                         .offer-form > .submit-btn-container  {

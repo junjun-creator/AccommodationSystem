@@ -1,0 +1,38 @@
+header {
+    height: 100px;
+    background: darksalmon;
+}
+
+.container > ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+    .container li {
+        border: 1px solid #979797;
+        width: 330px;
+        height: 500px;
+        background: gray;
+        display: flex;
+        justify-content: center;
+    }
+
+        .container li > a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .container li > a {
+                font-size: 130px;
+                color: rgb(206, 163, 186);
+                text-decoration: none;
+            }
+            .container li > a > span{
+                font-size: 50px;
+                margin-top: 20px;
+                font-weight: bold;
+                color: black;
+            }
