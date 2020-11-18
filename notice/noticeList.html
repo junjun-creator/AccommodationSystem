@@ -6,31 +6,34 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/jun.css">
     <link rel="stylesheet" href="../css/notice/noticeList.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <title>noticeList</title>
 </head>
 <body>
-    <header class="header pcHeader">
-        <div class="header_h1">
-            <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
-        </div>
-        <div>
-            <ul class="main_menu">
-                <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
-                <li><a href="">공지사항</a></li>
-                <li><a href="">이벤트</a></li>
-                <li><a href="">더보기</a></li>
-                <li class="mypage"><a href="">로그인</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="sec_header">
+        <header class="header pcHeader">
+            <div class="header_h1">
+                <h1><a class="teum_logo" href="http://127.0.0.1:5500/main.html">틈</a></h1>
+            </div>
+            <div>
+                <ul class="main_menu">
+                    <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">더보기</a></li>
+                    <li class="mypage"><a href="">로그인</a>
+                        <div class="mega_menu">
+                            <ul>
+                                <li><a href="">submenu</a></li>
+                                <li><a href="">submenu</a></li>
+                                <li><a href="">submenu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
     <section>
         <div class="container">
             <aside id="aside" class="aside">
@@ -42,45 +45,36 @@
                 </ul>
             </aside>
             <main id="main" class="main">
-                <h1>공지사항</h1>
+                <h1 class="d-none">공지사항</h1>
                 <div class="breadcrumb">
                     <ul>
-                        <li><i class="fas fa-home"></i>HOME</li>
+                        <li><i class="fas fa-home"></i>HOME></li>
                         <li>QnA</li>
                     </ul>
                 </div>
                 <section class="notice-sec">
                     <h1>공지사항 리스트</h1>
-                    <ol>
-                        <li>
-                            <form action="">
-                                <input type="checkbox" name="" id="">
-                            </form>
+                    <ol class="notice-sec-list">
+                        <li class="notice-sec-list-bg">
                             <div>
                                 <p>첫 번째 공지사항</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.</p>
+                                <p class="p-detail d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.</p>
                                 <p>2020/11/01</p>
                             </div>
                             <p>Master</p>
                         </li>
                         <li>
-                            <form action="">
-                                <input type="checkbox" name="" id="">
-                            </form>
                             <div>
-                                <p>첫 번째 공지사항</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.</p>
+                                <p>두 번째 공지사항</p>
+                                <p class="p-detail d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.</p>
                                 <p>2020/11/01</p>
                             </div>
                             <p>Master</p>
                         </li>
                         <li>
-                            <form action="">
-                                <input type="checkbox" name="" id="">
-                            </form>
                             <div>
-                                <p>첫 번째 공지사항</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.</p>
+                                <p>세 번째 공지사항</p>
+                                <p class="p-detail d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos, <br> sunt eaque officiis atque quae quod officia illum, ratione esse! Quidem possimus assumenda pariatur deserunt, quisquam id explicabo vero.</p>
                                 <p>2020/11/01</p>
                             </div>
                             <p>Master</p>
@@ -90,7 +84,7 @@
             </main>
         </div>
     </section>
-    <section>
+    <section class="sec_footer">
         <footer id="footer" class="footer">
             <div>
                 <ul>
