@@ -155,45 +155,51 @@ header li{
     }
 } */
 /*---------------------------------------------------------*/
+.sec_main_page{
+    min-height: 600px;
+}
 
 .promotion{
     height: 600px;
     background-color: rgb(247, 188, 247);
     --border: 1px solid red;
 }
-    .promotion>div:first-child{
-        width: 1200px;
-        margin: auto;
-        --border: 1px solid red;
-    }
-    .promotion>div:nth-child(2){
-        display: flex;
-        height: 500px;
-        padding-top: 20px;
+    .promotion_bar{
+        height: 600px;
         width: 1200px;
         margin: 0 auto;
+    }
+    .promotion>div>div:first-child{
+        /* width: 1200px;
+        margin: auto; */
+        --border: 1px solid red;
+    }
+    .promotion>div>div:nth-child(2){
+        display: flex;
+        height: 480px;
+        padding-top: 20px;
+        /* width: 1200px;
+        margin: 0 auto; */
         --border: 1px solid red;
         justify-content: space-evenly;
     }
-        .promotion>div:first-child{
+        .promotion>div>div:first-child{
             padding-top: 30px;
             text-indent: 100px;
         }
         
-        .promotion>div:nth-child(2)>div{
+        .promotion>div>div:nth-child(2)>div{
             --border: 1px solid red;
             --text-align: center;
             height: 100%;
             display: flex;
+            margin: 5px;
         }
-            .promotion>div:nth-child(2)>div:nth-child(1),
-            .promotion>div:nth-child(2)>div:nth-child(5){
+            .promotion>div>div:nth-child(2)>div:nth-child(1),
+            .promotion>div>div:nth-child(2)>div:nth-child(5){
                 align-items: center;
             }
-            .promotion>div:nth-child(2)>div:nth-child(1)>i,
-            .promotion>div:nth-child(2)>div:nth-child(5)>i{
-                font-size: 1000px;
-            }
+            
         .promotion .promotion-item{
             align-items: center;
             background-color: rgb(253, 245, 230);
@@ -230,24 +236,55 @@ header li{
                 border-bottom: 1.5px solid rgb(160, 160, 160);
             }
 
-            .promotion>div:nth-child(2)>div>a{
+            .promotion>div>div:nth-child(2)>div>a{
                 --border: 1px solid red;
             }
-            .promotion>div:nth-child(2)>div:nth-child(1){
+            .promotion>div>div:nth-child(2)>div:nth-child(1){
                 margin-left: 80px;
             }
-            .promotion>div:nth-child(2)>div:nth-child(5){
+            .promotion>div>div:nth-child(2)>div:nth-child(5){
                 margin-right: 80px;
             }
-        .promotion>div:nth-child(2)>div:nth-child(2){
+        .promotion>div>div:nth-child(2)>div:nth-child(2){
             width: 300px;
         }
-        .promotion>div:nth-child(2)>div:nth-child(3){
+        .promotion>div>div:nth-child(2)>div:nth-child(3){
             width: 300px;
         }
-        .promotion>div:nth-child(2)>div:nth-child(4){
+        .promotion>div>div:nth-child(2)>div:nth-child(4){
             width: 300px;
         }
+
+.category_bar{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .category_bar>ul{
+        display: flex;
+        justify-content: center;
+    }
+    .category_bar>ul>li>a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 30px;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.5s ease;
+    }
+        .category_bar>ul>li>a:hover{
+            color: lightcoral;
+            transform: scale(1.2);
+        }
+        
+    .category_bar>ul>li>a>img{
+        width: 80px;
+        margin-bottom: 20px;
+    }
 
 
 .main{
@@ -264,7 +301,7 @@ header li{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /*나중에 반응형 만들때 사용하기*/
+    --flex-wrap: wrap; /*나중에 반응형 만들때 사용하기*/
 }
     .sec_login_main>div:first-child{
         margin-right: 100px;
