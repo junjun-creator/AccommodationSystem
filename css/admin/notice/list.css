@@ -5,9 +5,10 @@
     /********************************************/
 
     .main {
-        width: 85%;
+        width: 1200px;
         min-height: 100px;
-        --background: rgb(107, 197, 224);
+        background:#ffffff;
+        margin: auto;
     }
         
     .ad-notice-bord {
