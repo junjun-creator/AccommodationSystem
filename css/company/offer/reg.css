@@ -187,6 +187,11 @@
                             margin: 10px auto;
                         }
 
+                            .offer-img-container img {
+                                width: 370px;
+                                height: 220px;
+                            }
+
                         .offer-detail-container {
                             width: 100%;
                             margin-left: 10px;
