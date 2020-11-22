@@ -3,118 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/event/list.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <title>이벤트 목록</title>
 </head>
 <body>
-    <header id="event">
-       <h1>틈(로고 및 상단바 영역)</h1>
-       <hr>
+    <header id="header" class="header">
+        <h1><a href="http://127.0.0.1:5500/main.html">틈</a></h1>
+        <nav>
+            <h1>메인메뉴</h1>
+            <ul>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">이벤트</a></li>
+                <li><a href="">더보기</a></li>
+                <li><a href="">로그인</a></li>
+            </ul>
+        </nav>
     </header>
-
+    
     <section>
-        <div>
-            <h1>이벤트 관리</h1>
-            <form>
-                <select>
-                    <option>이벤트 전체보기</option>
-                    <option>진행중인 이벤트</option>
-                    <option>종료된 이벤트</option>
-                </select>
-                <input type="submit" value="조회">
-            
-            </form>
-        </div>
-        <table border = 1>
-            <tr>
-                <td>선택</td>
-                <td>번호</td>
-                <td>제목</td>
-                <td>날짜</td>
-                <td>조회수</td>
-                <td>종료 여부</td>
-            </tr>
-           
-            <tr>
-                <td>
-                    <form>
-                        <input type="checkbox">
-                    </form>
-                </td>
-                <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>진행중</td>
-            </tr>
-            <tr>
-                <td>
-                    <form>
-                        <input type="checkbox">
-                    </form>
-                </td>
-                <td>3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>종료</td>
-            </tr>
-            <tr>
-                <td>
-                    <form>
-                        <input type="checkbox">
-                    </form>
-                </td>
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>종료</td>
-            </tr>
-          
-            <tr>
-                <td>
-                    <form>
-                        <input type="checkbox">
-                    </form>
-                </td>
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>종료</td>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <a href = "reg.html">등록</a>
-        <a href = "edit.html">수정</a>
-        <a href = "">삭제</a>
-    </div>
-        <div>
-            <h1>페이지 정보</h1>
-            <div>
-                1 / 4 pages
-            </div>
-        </div>
-        <div>
-            <h1>페이지 요청목록</h1>
-            <div>
-                이전
+        <div class="container">
+            <aside id="aside" class="aside">
+                <h1>게시판</h1>
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+                    <li><a href="">공지사항</a></li>
+                    <li class="active"><a href="">이벤트</a></li>
+                    <li><a href="">Q&A</a></li>
                 </ul>
-                다음
-            </div>
+            </aside>
+            <main id="main" class="main">
+                <div class="breadcrumb">
+                    <ul class="breadcrumb-list">
+                        <li><i class="fas fa-home"></i>HOME ▶ </li>
+                        <li>이벤트</li>
+                    </ul>
+                </div>
+                <section class="event-sec">
+                    <h1>이벤트</h1>
+                    <ul class="event-list">
+                        <li class="current-tab"><a href="">진행중인 이벤트</a></li>
+                        <li><a href="">종료된 이벤트</a></li>
+                    </ul>
+                    <div class="event-img-container">
+                        <div class="scale">
+                            <a href=""><img src="../images/event/event1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="event-img-container">
+                        <div class="scale">
+                            <a href=""><img src="../images/event/event2.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="event-img-container">
+                        <div class="scale">
+                            <a href=""><img src="../images/event/event3.png" alt=""></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
     </section>
 
-    <footer id="footer">
-        <hr>
-        <h1>푸터</h1>
-    </footer>
-
+    <section>
+        <footer id="footer" class="footer">
+            <div>
+                <ul>
+                    <li>
+                        <a href="">회사소개</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">이용약관</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">개인정보처리방침</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">사업자정보확인</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">여기어때 마케팅센터</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="">액티비티 호스트센터</a>
+                        <span>|</span>
+                    </li>
+                    <li><a href="">콘텐츠산업진흥법에의한 표시</a></li>
+                </ul>
+        
+                <p><b>고객행복센터 1577-8282</b>   오전 09:00 ~ 오후18:00</p>
+    
+                <address>
+                    <span>(주)TEUM</span>
+                    주소 : 서울특별시 종로구 인사동길 12 대일빌딩 15층
+                    <br>대표이사 : 신중언 | 사업자등록번호 777-11-45678
+                    <br>통신판매번호 : 2020-서울강남-12345 | 관광사업자 등록번호 : 제 1324-55호
+                    <br>전화번호 : 010-1111-2222
+                    <br>전자우편주소 : teum@teum.co.kr
+                    <br>Copyright TEUM COMPANY Corp. All rights reserved.
+                </address>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
