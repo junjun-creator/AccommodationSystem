@@ -1,39 +1,51 @@
     .main{
-        
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
     }
         .title{
-
+            display: flex;
         }
+            .title .main-img{
+
+            }
+            .title .main-info
         .review{
 
         }
         .event{
             border: 2px solid black;
-            display: flex;
+            position: relative;
+        }
+        .event h1{
+            font-weight: bold;
         }
             .event nav a{
-                justify-content: flex-end;
+                position: absolute;
+                right: 0px;
             }
             .event nav ul{
-                align-items: flex-end;
+                /* align-items: flex-end; */
             }
         .dateChange{
             border: 2px solid black;
         }
-        .information{
+
+        .information-box{
             display: flex;
         }
-            .information form tr:first-child td:first-child{
-                background: url(../../images/company/신라스테이_삼성/스탠다드_트윈/신라스테이_삼성_스탠다드트윈_메인.png);
-                width: 248px;
-                height: 176px;
-            }
-            .information table tr:first-child{
-
-            }
-            .information table tr:nth-child(2){
-                
-            }
-            .information table tr:nth-child(3){
-                
-            }
+        .information-box>div{
+            background-attachment: fixed;
+        }
+        .information-box table{
+            height: 220px;
+            width: 700px;
+            border: 1px solid black;
+            
+        }
+        .information-box table tr:nth-child(3) td:last-child{
+            background-color: pink;
+            color: white;
+        }
+        
+        
