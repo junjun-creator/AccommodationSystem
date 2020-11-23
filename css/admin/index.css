@@ -1,38 +1,62 @@
-header {
+* {
+    box-sizing: border-box;
+}
+
+/******************************/
+.header {
     height: 100px;
-    background: darksalmon;
+    background: #5F0080;
 }
 
-.container > ul {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
+/******************************/
+.container {
+    width: 1200px;
+    min-height: 500px;
+    background: rgb(255, 255, 255);
+    margin: 100px auto 0 auto;
 }
 
-    .container li {
-        border: 1px solid #979797;
-        width: 330px;
-        height: 500px;
-        background: gray;
-        display: flex;
-        justify-content: center;
+    .container > h1 {
+        font-size: 30px;
+        font-weight: bold;
+        --border: 1px solid red;
+        text-align: center;
     }
 
-        .container li > a{
+    .container > ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        .container li {
+            --border: 1px solid #979797;
+            width: 250px;
+            height: 500px;
+            --background: gray;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
         }
 
             .container li > a {
-                font-size: 130px;
-                color: rgb(206, 163, 186);
-                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
-            .container li > a > span{
-                font-size: 50px;
-                margin-top: 20px;
-                font-weight: bold;
-                color: black;
-            }
+
+                .container li > a {
+                    font-size: 130px;
+                    --color: rgb(206, 163, 186);
+                    text-decoration: none;
+                }
+
+                .container li > a:hover {
+                    color: #fc0453;
+                }
+
+                    .container li > a > span{
+                        font-size: 40px;
+                        margin-top: 30px;
+                        font-weight: bold;
+                        --color: black;
+                    }
