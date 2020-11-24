@@ -149,7 +149,7 @@
                     }
 
                     .main .list-board > table td.col-m { 
-                        width: 150px;
+                        width: 130px;
                     }
 
                     .main .list-board > table td.text-left {
@@ -158,10 +158,16 @@
 
                     .main .list-board > table td.event-ing {
                         font-weight: bold;
-                        color:  #fc0453;
+                        color: #fc0453;
                     }
 
                     .main .list-board > table td.event-end {
                         font-weight: bold;
+                    }
+
+                    .main .list-board > table .btn-delete > td{
+                        text-align: right;
+                        padding-right: 15px;
+                        border-bottom: none;
                     }
 
