@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/reset.css" type="text/css">
     <link rel="stylesheet" href="../../css/jun.css">
+    <link rel="stylesheet" href="../../css/admin-form.css">
     <link rel="stylesheet" href="../../css/admin/QnA/list.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <title>questionList</title>
 </head>
 <body>
@@ -16,11 +18,7 @@
             </div>
             <div>
                 <ul class="main_menu">
-                    <li class="header_search"><input type="text"><a href=""><i class="fas fa-search"></i></a></li>
-                    <li><a href="">공지사항</a></li>
-                    <li><a href="">이벤트</a></li>
-                    <li><a href="">더보기</a></li>
-                    <li class="mypage"><a href="">로그인</a>
+                    <li class="mypage"><a href="">로그아웃</a>
                         <div class="mega_menu">
                             <ul>
                                 <li><a href="">submenu</a></li>
@@ -33,62 +31,79 @@
             </div>
         </header>
     </div>
-    <section>
-        <div class="admin-container">
-            <aside id="aside" class="aside">
-                <h1>게시판</h1>
+    <section class="body">
+        <aside id="aside" class="aside">
+            <h1>고객센터</h1>
                 <ul>
                     <li><a href="">공지사항</a></li>
-                    <li><a href="">QNA</a></li>
+                    <li><a href="" class="active">QnA</a></li>
                 </ul>
-            </aside>
+        </aside>
+        <div class="container">
+            <nav id="nav" class="nav">
+                <ul>
+                    <li><a href=""><i class="fas fa-hotel"></i><span>업체관리</span></a></li>
+                    <li><a href=""><i class="fas fa-user-circle"></i><span>회원관리</span></a></li>
+                    <li><a href=""><i class="far fa-calendar-alt"></i><span>프로모션관리</span></a></li>
+                    <li class="current-tab"><a href=""><i class="fas fa-headphones"></i><span>고객센터</span></a></li>
+                </ul>
+            </nav>
             <main id="main" class="main">
-                <h1>문의사항</h1>
-                <section class="ad-qna-sec">
+                <h1  class="d-none">문의사항</h1>
+                <section class="sub-container">
+                    <div class="breadcrumb">
+                        <ul class="breadcrumb-list">
+                            <li><i class="fas fa-home"></i>HOME ▶ </li>
+                            <li>고객센터 ▶ </li>
+                            <li>공지사항 리스트</li>
+                        </ul>
+                    </div>
                     <h1>문의사항 리스트</h1>
-                    <select name="" id="" class="catagory">
-                        <form action="">
-                            <option value="" selected disabled>카테고리</option>
-                            <option value="이벤트">이벤트</option>
-                            <option value="예약/결제">예약/결제</option>
-                            <option value="취소/환불">취소/환불</option>
-                            <option value="서비스 이용">서비스 이용</option>
-                            <option value="회원/개인정보">회원/개인정보</option>
-                            <option value="리뷰">리뷰</option>
-                            <option value="기타">기타</option>
-                        </form>
-                    </select>
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <td>번호</td> 
-                                <td>제목</td>
-                                <td>날짜</td>
-                                <td>작성자</td>
-                                <td>선택여부</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>로그인이 안데요</td>
-                                <td>2020/11/01</td>
-                                <td>user001</td>
-                                <td>
-                                    <input type="checkbox" name="" id="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>환불하고 싶어요</td>
-                                <td>2020/11/03</td>
-                                <td>user2224</td>
-                                <td>
-                                    <input type="checkbox" name="" id="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <section class="list-board">
+                        <select name="" id="" class="catagory">
+                            <form action="">
+                                <option value="" selected disabled>카테고리</option>
+                                <option value="이벤트">이벤트</option>
+                                <option value="예약/결제">예약/결제</option>
+                                <option value="취소/환불">취소/환불</option>
+                                <option value="서비스 이용">서비스 이용</option>
+                                <option value="회원/개인정보">회원/개인정보</option>
+                                <option value="리뷰">리뷰</option>
+                                <option value="기타">기타</option>
+                            </form>
+                        </select>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>번호</td> 
+                                    <td>제목</td>
+                                    <td>날짜</td>
+                                    <td>작성자</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>로그인이 안데요</td>
+                                    <td>2020/11/01</td>
+                                    <td>user001</td>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>환불하고 싶어요</td>
+                                    <td>2020/11/03</td>
+                                    <td>user2224</td>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
                     <article>
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis molestias quod deleniti? Dolores,<br> possimus! Temporibus placeat facilis numquam aspernatur, voluptas aliquid ducimus id odit, soluta, facere assumenda velit ullam deserunt!
@@ -116,11 +131,6 @@
                 </section>
             </main>
         </div>
-    </section>
-    <section>
-        <footer id="footer">
-            <h1>footer</h1>
-        </footer>
     </section>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css/jun.css">
     <link rel="stylesheet" href="../../css/admin-form.css">
     <link rel="stylesheet" href="../../css/admin/notice/list.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <title>noticeList</title>
 </head>
 <body>
@@ -30,111 +31,88 @@
             </div>
         </header>
     </div>
-    <section class="quick-menu">
-        <nav>
-            <h1 class="d-none">상단 네비</h1>
-            <ol class="quick-menu-list">
-                <li><a href="" herf="">업체관리</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="" herf="">회원관리</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="" herf="">프로모션관리</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="check"><a href="" herf="">고객센터</a>
-                    <div class="mega_menu">
-                        <ul>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                            <li><a href="">submenu</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ol>
-        </nav>
-    </section>
-    <section>
-        <div class="admin-container">
-            <aside id="aside" class="aside">
-                <h1>게시판</h1>
+    <section class="body">
+        <aside id="aside" class="aside">
+            <h1>고객센터</h1>
                 <ul>
-                    <li class="check"><a href="">공지사항</a></li>
-                    <li><a href="">QNA</a></li>
+                    <li><a href="" class="active">공지사항</a></li>
+                    <li><a href="">QnA</a></li>
                 </ul>
-            </aside>
+        </aside>
+        <div class="container">
+            <nav id="nav" class="nav">
+                <ul>
+                    <li><a href=""><i class="fas fa-hotel"></i><span>업체관리</span></a></li>
+                    <li><a href=""><i class="fas fa-user-circle"></i><span>회원관리</span></a></li>
+                    <li><a href=""><i class="far fa-calendar-alt"></i><span>프로모션관리</span></a></li>
+                    <li class="current-tab"><a href=""><i class="fas fa-headphones"></i><span>고객센터</span></a></li>
+                </ul>
+            </nav>
             <main id="main" class="main">
                 <h1 class="d-none">공지사항</h1>
-                <section class="ad-notice-bord">
+                <section class="sub-container">
+                    <div class="breadcrumb">
+                        <ul class="breadcrumb-list">
+                            <li><i class="fas fa-home"></i>HOME ▶ </li>
+                            <li>고객센터 ▶ </li>
+                            <li>공지사항 리스트</li>
+                        </ul>
+                    </div>
                     <h1>공지사항 리스트</h1>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td class="col-s">번호</td>
-                                <td>제목</td>
-                                <td class="col-m">날짜</td>
-                                <td class="col-m">작성자</td>
-                                <td class="col-s">선택여부</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>첫 번째 공지사항</td>
-                                <td>2020/11/01</td>
-                                <td>Master</td>
-                                <td>
-                                    <input type="checkbox" name="" id="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>두 번째 공지사항</td>
-                                <td>2020/11/03</td>
-                                <td>Master</td>
-                                <td>
-                                    <input type="checkbox" name="" id="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>세 번째 공지사항</td>
-                                <td>2020/11/06</td>
-                                <td>Master</td>
-                                <td>
-                                    <input type="checkbox" name="" id="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>네 번째 공지사항</td>
-                                <td>2020/11/07</td>
-                                <td>Master</td>
-                                <td>
-                                    <input type="checkbox" name="" id="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <section class="list-board">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td class="col-s">No.</td>
+                                    <td>제목</td>
+                                    <td class="col-m">날짜</td>
+                                    <td class="col-m">작성자</td>
+                                    <td class="col-s"><input type="checkbox"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>첫 번째 공지사항</td>
+                                    <td>2020/11/01</td>
+                                    <td>Master</td>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>두 번째 공지사항</td>
+                                    <td>2020/11/03</td>
+                                    <td>Master</td>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>세 번째 공지사항</td>
+                                    <td>2020/11/06</td>
+                                    <td>Master</td>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>네 번째 공지사항</td>
+                                    <td>2020/11/07</td>
+                                    <td>Master</td>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr class="btn-delete">
+                                    <td colspan="5"><input type="submit" value="삭제"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
                     <article class="d-none">
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore sit earum provident alias? Neque ex <br> molestias nostrum suscipit reprehenderit a ratione! Vitae neque quae enim temporibus non magnam quibusdam necessitatibus!
