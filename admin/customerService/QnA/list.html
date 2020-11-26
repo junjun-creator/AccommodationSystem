@@ -58,8 +58,8 @@
                             <li>공지사항 리스트</li>
                         </ul>
                     </div>
-                    <h1>문의사항 리스트</h1>
                     <section class="list-board">
+                        <h1>문의사항 리스트</h1>
                         <select name="" id="" class="catagory">
                             <form action="">
                                 <option value="" selected disabled>카테고리</option>
@@ -75,58 +75,69 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>번호</td> 
-                                    <td>제목</td>
-                                    <td>날짜</td>
-                                    <td>작성자</td>
-                                    <td><input type="checkbox"></td>
+                                    <td class="col-s">번호</td> 
+                                    <td class="col-sm">회원명</td>
+                                    <td class="col-sm">닉네임</td>
+                                    <td class="col-ml">문의제목</td>
+                                    <td class="col-m">연락처</td>
+                                    <td class="col-sm">문의날짜</td>
+                                    <td class="col-s">답변여부</td>
+                                    <td class="col-s"><input type="checkbox"></td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>로그인이 안데요</td>
-                                    <td>2020/11/01</td>
+                                    <td>김춘삼</td>
                                     <td>user001</td>
+                                    <td>로그인이 안데요</td>
+                                    <td>010-1234-5678</td>
+                                    <td>2020/11/01</td>
+                                    <td>아니오</td>
                                     <td>
                                         <input type="checkbox" name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
+                                    <td>김춘사</td>
+                                    <td>bombomsa</td>
                                     <td>환불하고 싶어요</td>
+                                    <td>010-5678-7788</td>
                                     <td>2020/11/03</td>
-                                    <td>user2224</td>
+                                    <td>아니오</td>
                                     <td>
                                         <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr class="btn-delete">
+                                    <td colspan="8">
+                                        <form action="">
+                                            <input type="submit" value="생성">
+                                            <input type="submit" value="삭제">
+                                        </form>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-                    <article>
+                    <article class="d-none">
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis molestias quod deleniti? Dolores,<br> possimus! Temporibus placeat facilis numquam aspernatur, voluptas aliquid ducimus id odit, soluta, facere assumenda velit ullam deserunt!
                         </p>
                     </article>
                     <section>
-                        <h1>페이지 정보</h1>
+                        <h1 class="d-none">페이지 정보</h1>
                         <div>
                             1 / 2 pages
                         </div>
                     </section>
                     <section>
-                        <h1>페이지 요청목록</h1>
+                        <h1 class="d-none">페이지 요청목록</h1>
                         <ul>
                             <li>1</li>
                             <li>2</li>
                         </ul>
-                    </section>
-                    <section>
-                        <form action="">
-                            <input type="button" value="answer">
-                            <input type="button" value="delete">
-                        </form>
                     </section>
                 </section>
             </main>

@@ -58,16 +58,16 @@
                             <li>공지사항 리스트</li>
                         </ul>
                     </div>
-                    <h1>공지사항 리스트</h1>
                     <section class="list-board">
+                        <h1>공지사항 리스트</h1>
                         <table>
                             <thead>
                                 <tr>
                                     <td class="col-s">No.</td>
-                                    <td>제목</td>
-                                    <td class="col-m">날짜</td>
-                                    <td class="col-m">작성자</td>
-                                    <td class="col-s"><input type="checkbox"></td>
+                                    <td class="col-m">제목</td>
+                                    <td class="col-sm">날짜</td>
+                                    <td class="col-sm">작성자</td>
+                                    <td class="col-s"><input type="checkbox" class="selectAllMembers"></td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -77,7 +77,7 @@
                                     <td>2020/11/01</td>
                                     <td>Master</td>
                                     <td>
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="" class="memberChk" >
                                     </td>
                                 </tr>
                                 <tr>
@@ -86,7 +86,7 @@
                                     <td>2020/11/03</td>
                                     <td>Master</td>
                                     <td>
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="" class="memberChk">
                                     </td>
                                 </tr>
                                 <tr>
@@ -95,7 +95,7 @@
                                     <td>2020/11/06</td>
                                     <td>Master</td>
                                     <td>
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="" class="memberChk">
                                     </td>
                                 </tr>
                                 <tr>
@@ -104,11 +104,17 @@
                                     <td>2020/11/07</td>
                                     <td>Master</td>
                                     <td>
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="" class="memberChk">
                                     </td>
                                 </tr>
                                 <tr class="btn-delete">
-                                    <td colspan="5"><input type="submit" value="삭제"></td>
+                                    <td colspan="5">
+                                        <form action="">
+                                            <input type="submit" value="생성">
+                                            <input type="submit" value="수정">
+                                            <input type="submit" value="삭제">
+                                        </form>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -131,16 +137,32 @@
                             <li>2</li>
                         </ul>
                     </section>
-                    <section>
-                        <form action="">
-                            <input type="button" value="creat">
-                            <input type="button" value="upload">
-                            <input type="button" value="delete">
-                        </form>
-                    </section>
                 </section>
             </main>
         </div>
     </section>
+    <script>
+        var selectAll = document.querySelector(".selectAllMembers");
+        selectAll.addEventListener('click', function(){
+            var objs = document.querySelectorAll(".memberChk");
+            for (var i = 0; i < objs.length; i++) {
+              objs[i].checked = selectAll.checked;
+            };
+        }, false);
+         
+        var objs = document.querySelectorAll(".memberChk");
+        for(var i=0; i<objs.length ; i++){
+          objs[i].addEventListener('click', function(){
+            var selectAll = document.querySelector(".selectAllMembers");
+            for (var j = 0; j < objs.length; j++) {
+              if (objs[j].checked === false) {
+                selectAll.checked = false;
+                return;
+              };
+            };
+            selectAll.checked = true;                                   
+        }, false);
+        } 
+      </script>
 </body>
 </html>
